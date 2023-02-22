@@ -17,11 +17,12 @@ const OnboardingScreen = () => {
       <View style={{ flex:1, width:'100%' , alignItems:'flex-start',justifyContent:'flex-start',position:'relative',top:70,paddingRight:'100%'}}>
       <TextInput  style={{ padding: 70, margin:100, height:50,width:'40%',backgroundColor:'#fff', paddingLeft:100}} />
       </View>
+         <View style={{ flexDirection:'row',width:'200%',justifyContent:'space-evenly',marginBottom:'15%',alignSelf:'center',paddingTop:'20%' }}>
+        <Button title='Skip' onPress={() => { navigation.navigate("Home") }} style={{ fontWeight: 'bold', color: 'white'}}></Button>
 
-
-      
-      
-    </View>
+        <Button title='Next' onPress={() => { navigation.navigate("Dashboard") }} style={{ fontWeight: 'bold', color: 'white' }}></Button>
+        </View>
+     </View>
 
   )
 }
