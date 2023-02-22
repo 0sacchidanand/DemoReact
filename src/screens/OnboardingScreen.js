@@ -20,7 +20,7 @@ const OnboardingScreen = () => {
          <View style={{ flexDirection:'row',width:'200%',justifyContent:'space-evenly',marginBottom:'15%',alignSelf:'center',paddingTop:'20%' }}>
         <Button title='Skip' onPress={() => { navigation.navigate("Home") }} style={{ fontWeight: 'bold', color: 'white'}}></Button>
 
-        <Button title='Next' onPress={() => { navigation.navigate("Dashboard") }} style={{ fontWeight: 'bold', color: 'white' }}></Button>
+        <Button title='Next' onPress={() => { navigation.navigate("NewScreen") }} style={{ fontWeight: 'bold', color: 'white' }}></Button>
         </View>
      </View>
 
