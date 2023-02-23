@@ -10,19 +10,35 @@ const OnboardingScreen = () => {
       flex: 1, backgroundColor: '#7364FF', 
          alignItems: 'center'
     }}>
-      <View style={{width:'100%' , alignItems:'center',position:'absolute',top:20}}>
-      <Image source={{uri:'https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png'}} style={{height:20,width:20,position:'absolute',zIndex:10,left:30,top:20}}/>
-      <TextInput placeholder='Search' placeholderTextColor={'black'} style={{ padding: 10, margin: 5 , height:50,width:'90%',backgroundColor:'#fff',borderRadius:15, paddingLeft:50}} />
+      <View style={{ width: '100%', alignItems: 'center', marginVertical: 20 }}>
+        <Image source={{ uri: 'https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png' }} style={{ height: 20, width: 20, position: 'absolute', zIndex: 10, left: 30, top: 20 }} />
+        <TextInput placeholder='Search' placeholderTextColor={'black'} style={{ padding: 10, margin: 5, height: 50, width: '90%', backgroundColor: '#fff', borderRadius: 15, paddingLeft: 50 }} />
       </View>
-      <View style={{ flex:1, width:'100%' , alignItems:'flex-start',justifyContent:'flex-start',position:'relative',top:70,paddingRight:'100%'}}>
-      <TextInput  style={{ padding: 70, margin:100, height:50,width:'40%',backgroundColor:'#fff', paddingLeft:100}} />
+      <View style={{ position: 'absolute', left: 50, bottom: 50 }}>
+        <Button title='Skip' onPress={() => { navigation.navigate("Home") }} style={{ fontWeight: 'bold', color: 'white' }}></Button>
       </View>
-         <View style={{ flexDirection:'row',width:'200%',justifyContent:'space-evenly',marginBottom:'15%',alignSelf:'center',paddingTop:'20%' }}>
-        <Button title='Skip' onPress={() => { navigation.navigate("Home") }} style={{ fontWeight: 'bold', color: 'white'}}></Button>
-
+      <View style={{ position: 'absolute', right: 50, bottom: 50 }}>
         <Button title='Next' onPress={() => { navigation.navigate("NewScreen") }} style={{ fontWeight: 'bold', color: 'white' }}></Button>
+      </View>
+      <View style={{marginTop:'35%',}}>
+      <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-evenly', }}>
+        <View style={{ height: 120, width: 120, backgroundColor: '#fff',borderRadius }}>
+
         </View>
-     </View>
+        <View style={{ height: 120, width: 120, backgroundColor: '#fff' }}>
+
+        </View>
+      </View>
+      <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-evenly' , marginVertical:50 }}>
+        <View style={{ height: 120, width: 120, backgroundColor: '#fff' }}>
+
+        </View>
+        <View style={{ height: 120, width: 120, backgroundColor: '#fff' }}>
+
+        </View>
+      </View>
+      </View>
+    </View>
 
   )
 }
